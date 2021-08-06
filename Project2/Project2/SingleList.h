@@ -15,8 +15,12 @@ private :
 	Node* head;//항상 첫째를 가리킬 포인터
 	int count; // 갯수 세어줄 친구 
 
+public :
+	int data;
+	Node* tail;
+
 public://구현해야되는 기능
-	void AddNode(int a); //노드 추가하는애 - 푸시  
+	void AddNode(int data); //노드 추가하는애 - 푸시  
 	void insertNode(int index, int a); //도중에 노드 끼워줄 애 - 인설트
 	void UpdateNode(int index, int a);//노드끼리 데이터 바꿔줄 애
 	void DeleteData(int a); //노드의 값만 지워줄 애 
@@ -33,6 +37,7 @@ public:
 		//사실 위에 프라이빗에서 바로 해줘도 상관은 없음 ㅎ
 	{
 		head = nullptr;// 포인터 헤드는 일단 널포인터 빈공간을 가리키도록 초기화함. 
+		tail = nullptr;
 		count = 0; // 일단 카운트는 0으로 초기화 함. 
 	}
 	~SingleList()//소멸자, 클래스가 끝날 때 실행된다.
