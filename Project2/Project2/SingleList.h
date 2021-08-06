@@ -16,8 +16,10 @@ private :
 	int count; // 갯수 세어줄 친구 
 
 public :
-	int data;
+	int data=0;
 	Node* tail;
+	Node* tmp;
+	int index = 0;
 
 public://구현해야되는 기능
 	void AddNode(int data); //노드 추가하는애 - 푸시  
