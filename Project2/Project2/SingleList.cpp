@@ -108,3 +108,10 @@ int SingleList::GetNodeData(int index)
 	
 	return 0;
 }
+
+void SingleList::UpdateNode(int index, int _data)
+{
+
+
+
+}

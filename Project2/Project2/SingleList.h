@@ -25,7 +25,7 @@ public :
 public://구현해야되는 기능
 	void AddNode(int data); //노드 추가하는애 - 푸시  
 	void InsertNode(int index, int _data); //도중에 노드 끼워줄 애 - 인설트
-	void UpdateNode(int index, int a);//노드끼리 데이터 바꿔줄 애
+	void UpdateNode(int index, int _data);//노드끼리 데이터 바꿔줄 애
 	void DeleteData(int a); //노드의 값만 지워줄 애 
 	void DeleteIndex(int index);// 노드를 쏙 제거해줄 애
 	void ClearAll();//모든 노드를 다 없애버릴 애
